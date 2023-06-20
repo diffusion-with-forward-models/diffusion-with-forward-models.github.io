@@ -158,17 +158,18 @@
   </div>
 </section>
 
-<section class="section">
+<section class="hero teaser">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="row">
+    <div class="hero-body">
         <video id="r10k" autoplay muted loop playsinline width="100%">
           <source src="videos/teaser.mp4"
               type="video/mp4">
-            </video>
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Teaser Description.
+        </h2>  
       </div>
-    </div>
     <!--/ Abstract. -->
   </div>
 </section>
@@ -179,7 +180,6 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
             Denoising diffusion models have emerged as a powerful class of generative models capable of capturing the distributions of complex, real-world signals.
@@ -202,16 +202,18 @@
   </div>
 </section>
 
-<section class="hero teaser">
+<section class="section">
   <div class="container is-max-desktop">
-    <div class="hero-body">
+    <div class="rows is-centered">
       <div class="row">
         <h2 class="title is-3 has-text-centered">Inverse Graphics</h2>
-        <h2 class="subtitle has-text-justified">
+        <h2 class="content has-text-justified">
+          <p>
             We first show results on reconstructing 3D scenes from a single input image. Each result shows the input image (left), a smooth camera rendering from the reconstructed 3D scene (middle), and the corresponding depth map 
             rendered from the recosntructed 3D scene (right). Note that our method can reconstruct high-quality geometry for the visible part, and can reconstruct plausible geometry and appearance even outside the visible 3D region, thanks to our generative model. 
             Our model can directly reason about the uncertainties in the 3D space, conditioned on a single image.   <br><br>
             We show results on two challenging datasets, RealEstate10k that includes complex unbounded indoor and outdoor scenes, and Co3D that includes 360 degree object-centric scenes. 
+          </p>
         </h2>
         <br>
       </div>
@@ -245,7 +247,7 @@
 <!--    <div class="hero-body">-->
       <div class="row">
         <h2 class="title is-3 has-text-centered">Sample Diversity</h2>
-        <h2 class="subtitle has-text-justified">
+        <h2 class="content has-text-justified">
           Our model learns to reason about the uncertainty in the 3D reconstruction. 
           We can sample from this space of uncertainty, i.e., we can sample multiple plausble scenes conditioned on the same context image.<br><br>
           
@@ -292,7 +294,7 @@
       <div class="row">
         <h2 class="title is-3 has-text-centered">Comparison to Other Methods</h2>
 
-        <h2 class="subtitle has-text-justified">
+        <h2 class="content has-text-justified">
           Our approach is the first to sample directly from the space of 3D scenes consistent with an image. Nevertheless, we compare to two state-of-the-art baselines. 
           We significantly outperform them qualitatively as well as quantitatively, see the paper for details. All results used for comparisons are from models trained at 64 x 64 resolution. <br><br>
 
@@ -326,7 +328,7 @@
 <!--      </div>-->
       <div class="row">
         <h2 class="title is-3 has-text-centered">Sampling Motion Fields</h2>
-        <h2 class="subtitle has-text-justified">
+        <h2 class="content has-text-justified">
           We further demonstrate two more applications of our model. Here, we show results for sampling multiple plausible motion fields consistent with a single static image. 
           Our model can reason about potential motion that is consitent with the static input image. <br><br>
 
@@ -347,9 +349,9 @@
       <div class="row">
         <a id="variations"></a>
         <h2 class="title is-3 has-text-centered">More Variations of 3D Reconstructions</h2>
-        <h2 class="subtitle has-text-centered">
-            Each grid shows a distribution of scenes generated from the same context image.<br>
-            The right-most cell represents the per-pixel variance across samples.<br>
+        <h2 class="content has-text-justified">
+            Each grid shows a distribution of scenes generated from the same context image.
+            The right-most cell represents the per-pixel variance across samples.
             Notice how the variance increases as we move farther from the context image.
         </h2>
         <br>
