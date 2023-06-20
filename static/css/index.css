@@ -2,6 +2,24 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.main-title{
+  font-weight:bold;
+}
+
+.sub-title {
+  font-weight:normal !important;
+}
+
+figure{
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+figcaption{
+  margin-top: -3rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
 
 .footer .icon-link {
     font-size: 25px;
@@ -167,6 +185,15 @@ select::-ms-expand {
 
 .author-block {
   display: inline-block;
+}
+
+.publication-legend {
+  margin-top: 1rem;
+}
+
+.legend {
+  vertical-align: center;
+  display: inline-flex;
 }
 
 .publication-banner img {
